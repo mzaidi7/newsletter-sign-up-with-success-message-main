@@ -1,0 +1,112 @@
+/* Define Roboto Bold */
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Define Roboto Regular */
+  @font-face {
+    font-family: 'Roboto Regular';
+    src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+body{
+    background-color: hsl(229, 23%, 28%);
+}
+
+h1{
+    font-family: 'Roboto Bold';
+    font-size: 50px;
+    color: hsl(227, 42%, 28%);
+}
+
+p, ul, li{
+    font-family: 'Roboto Regular';
+    font-size: 14px;
+    color: hsl(227, 42%, 28%);
+}
+.outside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px; /* Adjust the padding percentage as needed */
+}
+
+.main{
+    width: 40%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the div horizontally */
+    padding: 60px 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center; /* Center the boxes vertically within the container */
+    background-color: whitesmoke;
+}
+
+ul, li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+.icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.box1 {
+  width: 45%;
+  height: 100%;
+  margin: 0px 30px 0px 40px; 
+  float: left; /* Float the boxes to the left */
+}
+
+.box2 {
+  width: 45%;
+  height: 120%;
+  margin: 10px 0px 10px 30px; /* Add margin to the right side to shift it to the right */
+  float: right; /* Float the boxes to the right */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+#emailForm label[for="email"]{
+    font-family: 'Roboto Bold';
+    font-size: 12px;
+    color: hsl(227, 42%, 28%);
+}
+
+  
+  /* Apply styles to the email input */
+  #email {
+    width: 90%; /* Make the email input take the full width of the container */
+    padding: 15px; /* Add padding for spacing */
+    margin: 10px 0; /* Add vertical margin for spacing */
+    border-radius: 10px;
+}
+  
+  /* Apply styles to the submit button */
+  #submitButton {
+    width: 100%; /* Enlarge the button width */
+    padding: 15px; /* Increase padding for button size */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: hsl(227, 42%, 28%); /* Change button background color */
+    color: #ffffff; /* Change button text color */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor on hover */
+    margin: 20px auto; /* Center the button horizontally and add vertical margin */
+  }
+  
+  /* Add hover effect */
+  #submitButton:hover {
+    background-color: #2980b9; /* Change button background color on hover */
+  }
